@@ -1,0 +1,10 @@
+Exploring the dataset, the most occurring chord is C major, appearing a bit more than 10% of the time.
+The ideal distribution would be 4.17% for each chord. However, the discrepancy is not enough to expect a hugely biased model, so I will start training a model first and check the results.
+
+A quick test with a random forest algorithm gives an accuracy, precision and recall of around 84%, which is pretty good.
+
+Let's try some hyperparameter tuning for the random forest model, in k_random_forest.py
+
+We can try a Multi-layer Perceptron model as well, a basic neural network. It is in mlp.py
+
+The results are similar to the random forest model, with an accuracy, precision, recall and F1 score of around 82%.
